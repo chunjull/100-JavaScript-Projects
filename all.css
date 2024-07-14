@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom CSS */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ececec;
+  font-family: "Arsenal SC", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 80vw;
+  max-width: 400px;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.underline {
+  height: 4px;
+  width: 128px;
+  background-color: steelblue;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review {
+  max-width: 400px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.review:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: .3s ease-in;
+}
+
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+#person-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.img-container::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background-color: steelblue;
+  color:#fff;
+}
+
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: steelblue;
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  border-radius: 50%;
+}
+
+#author {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+#job {
+  color: steelblue;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+#info {
+  font-family: "Edu SA Beginner", cursive, sans-serif;
+  text-align: center;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.button-container {
+  margin-bottom: 8px;
+}
+
+.prev-btn,
+.next-btn {
+  color: steelblue;
+  font-size: 20px;
+  background-color: transparent;
+  border: 0;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: #2d6b9e;
+  transition: .3s ease-in;
+}
+
+.random-btn {
+  font-family: "Arsenal SC", sans-serif;
+  color: #2d6b9e;
+  background-color: transparent;
+  border: 2px solid steelblue;
+  border-radius: 4px;
+  padding: 4px;
+  padding-top: 2px;
+}
+
+.random-btn:hover {
+  color: #fff;
+  background-color: steelblue;
+  transition: .3s ease-in;
+}
+
+.random-btn:active {
+  background-color: rgb(70, 130, 180);
+}
+
+.random-btn:focus {
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 2px rgb(70, 130, 180);
+}
